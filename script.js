@@ -8,39 +8,19 @@ let span = document.getElementById('range-span')
 let circle = document.getElementById('circle')
 
 
-// получаем значения инпута
-// const logger1 = function eventForm(value) {
-//   if (value == 'red', 'green', 'blue', 'orange') {
-//     console.log('Вы ввели то что нужно')
-//   }
-// }
+// let logger = function onClick() {
+//   square.style.backgroundColor = input.value;
+// };
 
 
-let logger = function onClick(event) {
-  console.log('Клик');
-  square.style.backgroundColor = event.target.value;
-};
-
-// const logger1 = function (event) {
-//   // console.log(event.target.value);
-//   for(let i = 0; i < input.length; i++){
-//     if(input[i].checked){
-//       square.style.backgroundColor = event.target.value.val();
-//     } else{
-  
-//       // square.style.backgroundColor = event.target.value;
-//       console.log('Hfyj');
-      
-//     }
-//   }
-
-// }
+// btn.addEventListener('click', logger);
+// input.addEventListener('focus', logger);
 
 
-btn.addEventListener('click', logger);
-input.addEventListener('focus', logger)
 
-
+btn.addEventListener('click', function () {
+  square.style.backgroundColor = input.value;
+});
 // Задание 2
 
 btn2.style.display = 'none';
